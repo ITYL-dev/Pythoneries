@@ -93,8 +93,8 @@ def perlin(grid_shape: tuple = (10, 10), discretization: tuple = (10, 10)):
 
 if __name__ == "__main__":
 
-    grid1, noise1 = perlin(grid_shape=(10,), discretization=(100,))
-    grid2, noise2 = perlin()
+    grid1, noise1 = perlin((20,), (1000,))
+    grid2, noise2 = perlin((10, 10), (20, 20))
 
     fig = plt.figure()
     ax = fig.add_subplot(1, 3, 1)
